@@ -1,0 +1,9 @@
+<div>
+  <h2>Edita el producto</h2>
+  <input [(ngModel)]="producto.name" type="text">
+  <br>
+  <input [(ngModel)]="producto.brand" type="text">
+  <br>
+  <button (click)="saveProducto(producto)">Guardar los cambios</button>
+</div>
+<button (click)="removeProducto(producto._id)"> Borra producto</button>  

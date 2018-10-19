@@ -1,0 +1,14 @@
+<div>
+  <h2>Agrega el producto</h2>
+  <input [(ngModel)]="producto.name" type="text">
+  <br>
+  <input [(ngModel)]="producto.brand" type="text">
+  <br>
+  <input [(ngModel)]="producto.image" type="text">
+  <br>
+  <input placeholder="separa lo con comas" [(ngModel)]="producto.specs" type="text">
+  <br>
+  <button (click)="saveProducto(producto)">Guardar los cambios</button>
+</div>
+  
+  

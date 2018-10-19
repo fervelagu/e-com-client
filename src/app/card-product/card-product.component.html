@@ -1,0 +1,14 @@
+<a 
+[queryParams]="{size:'XL', color:'red', discount:'20%'}"
+[routerLink]="['/detail', producto._id]">
+<div>
+  <img width="100" src="{{producto.image || 'http://shfcs.org/en/wp-content/uploads/2015/11/MedRes_Product-presentation-2.jpg'}}" alt="">
+  <h2> Product name: {{producto.name}}</h2>
+  <p>
+    Product brand: {{producto.brand}}
+  </p>
+  <button *ngFor="let spec of producto.specs" (click)="onAddCart()">
+    {{spec}}
+  </button>
+</div>
+</a>
